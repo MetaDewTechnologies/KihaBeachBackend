@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://kiha-beach:3306/jwt_security
-    username: ariuhzjyi
-    password: D332J0UF4WG60747
+    url: jdbc:mysql://kiha-beach.mysql.database.azure.com:3306/jwt_security
+    username: kihaadmin
+    password: meta@12345
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
