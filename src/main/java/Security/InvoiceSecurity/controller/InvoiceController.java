@@ -48,7 +48,7 @@ public class InvoiceController {
         return new ResponseEntity<>(responses, HttpStatus.OK);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin
     @PostMapping("/create-with-items")
     public ResponseEntity<InvoiceResponse> createInvoiceWithItems(@RequestBody InvoiceCreationRequest request) {
         InvoiceDetailDTO invoiceDetail = request.getInvoiceDetail();
