@@ -19,7 +19,7 @@ public class AuthenticationController {
     ){
         return ResponseEntity.ok(service.register(request));
     }
-    @CrossOrigin
+    @CrossOrigin(origins = "https://matadewkiha.com")
     @PostMapping("/authenticate")
     public ResponseEntity<LoginResponse> register(
             @RequestBody AuthenticationRequest request
