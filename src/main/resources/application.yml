@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://kiha-beach.mysql.database.azure.com:3306/jwt_security
+    url: jdbc:mysql://kihabeachsqlserver.mysql.database.azure.com:3306/kihabeach
     username: kihaadmin
     password: meta@12345
     driver-class-name: com.mysql.jdbc.Driver
