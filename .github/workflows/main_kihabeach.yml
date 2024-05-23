@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - KihaBeach
+name: Build and deploy JAR app to Azure Web App - kihabeach
 
 on:
   push:
@@ -48,15 +48,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9C3AB728FFAD4C0AA9F213126748077C }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_46EC1DDD5DA34B40B8BD6485FEB1E669 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F2E0FFB9A6B24E6A900DC1127A8A462D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6974816CE1A34689BA09CED7C5A9C8C4 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3C87C0B8BA6C4A1690DF4A3A0FDBEC66 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_887A0CC92FB54B07AA1B4150C90BF070 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'KihaBeach'
+          app-name: 'kihabeach'
           slot-name: 'Production'
           package: '*.jar'
           
